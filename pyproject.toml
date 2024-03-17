@@ -1,0 +1,37 @@
+[project]
+name = "comic-nodrm"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "TonyLeung47", email = "142762268+TonyLeung47@users.noreply.github.com" }
+]
+dependencies = [
+    "natsort>=8.4.0",
+    "get-mac>=0.9.2",
+    "nuitka>=2.1.2",
+    "pycryptodome>=3.20.0",
+    "pydantic>=2.6.4",
+    "beautifulsoup4>=4.12.3",
+    "lxml>=5.1.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "black>=24.3.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/comic_nodrm"]
+
+[tool.black]
+line-length = 120
