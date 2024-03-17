@@ -1,0 +1,6 @@
+[submodule "src/comic_nodrm/DeDRM_tools"]
+	path = src/comic_nodrm/DeDRM_tools
+	url = https://github.com/TonyLeung47/DeDRM_tools.git
+[submodule "src/comic_nodrm/KindleUnpack"]
+	path = src/comic_nodrm/KindleUnpack
+	url = https://github.com/kevinhendricks/KindleUnpack.git
