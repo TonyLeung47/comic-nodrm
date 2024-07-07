@@ -31,7 +31,7 @@ def epub2cbz(epub: Path, output: Path):
                 images.append(item_path)
 
             # when item is xhtml
-            elif item_path.suffix == ".xhtml":
+            elif item_path.suffix in (".xhtml", ".html"):
                 xhtml = z.read(item_path.as_posix()).decode()
                 soup = BeautifulSoup(xhtml, "html.parser")
                 image_tag = soup.find("image") or soup.find("img")

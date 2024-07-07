@@ -1,6 +1,6 @@
 [project]
 name = "comic-nodrm"
-version = "1.0.0"
+version = "1.0.1"
 description = "Add your description here"
 authors = [
     { name = "TonyLeung47", email = "142762268+TonyLeung47@users.noreply.github.com" }
